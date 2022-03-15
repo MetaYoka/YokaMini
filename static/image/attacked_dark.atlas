@@ -1,0 +1,9 @@
+attacked_dark.png
+size:644,644
+filter:Linear,Linear
+pma:true
+particle
+bounds:350,333,291,308
+starlight
+bounds:2,296,346,345
+offsets:4,5,354,355

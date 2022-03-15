@@ -1,0 +1,131 @@
+{
+"skeleton": { "hash": "8JtHBJKLb9g", "spine": "4.0.56", "x": -228.91, "y": -206.36, "width": 440.36, "height": 475.1 },
+"bones": [
+	{ "name": "root", "scaleX": 1.5, "scaleY": 1.5 },
+	{ "name": "explosion", "parent": "root" },
+	{ "name": "light", "parent": "explosion", "scaleX": 1.376, "scaleY": 1.376 },
+	{ "name": "particle", "parent": "explosion", "scaleX": 0.559, "scaleY": 0.559 },
+	{ "name": "starlight", "parent": "explosion" },
+	{ "name": "twistglow", "parent": "explosion" }
+],
+"slots": [
+	{ "name": "particle", "bone": "particle", "color": "ffffff00", "attachment": "particle" },
+	{ "name": "starlight", "bone": "starlight", "color": "ffffff00", "attachment": "starlight" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"particle": {
+				"particle": { "x": 1.2, "y": 0.08, "scaleX": 0.75, "scaleY": 0.75, "width": 291, "height": 308 }
+			},
+			"starlight": {
+				"starlight": { "scaleX": 0.682, "scaleY": 0.682, "width": 354, "height": 355 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation1": {
+		"slots": {
+			"particle": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3024, "color": "ffffffff" },
+					{ "time": 0.4333, "color": "ffffff00" }
+				]
+			},
+			"starlight": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"light": {
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 1.8, "y": 1.8, "curve": "stepped" },
+					{ "time": 0.0667, "x": 1.8, "y": 1.8 },
+					{ "time": 0.1441, "x": -0.376, "y": -0.376 }
+				]
+			},
+			"particle": {
+				"scale": [
+					{
+						"time": 0.0667,
+						"curve": [ 0.147, 1.746, 0.148, 1.802, 0.147, 1.746, 0.148, 1.802 ]
+					},
+					{ "time": 0.4333, "x": 1.944, "y": 1.944 }
+				]
+			},
+			"starlight": {
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 1.695, "y": 1.695, "curve": "stepped" },
+					{ "time": 0.0667, "x": 1.695, "y": 1.695 },
+					{ "time": 0.1441, "x": 0, "y": 0 }
+				]
+			},
+			"twistglow": {
+				"rotate": [
+					{},
+					{ "time": 0.1888, "value": 78.7 },
+					{ "time": 0.3052, "value": 234.62 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.119, "x": 1.255, "y": 1.255 },
+					{ "time": 0.3052, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"animation2": {
+		"bones": {
+			"light": {
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 0.908, "y": 0.908 },
+					{ "time": 0.4667, "x": -0.284, "y": -0.284 },
+					{ "time": 0.5, "x": -0.376, "y": -0.376 }
+				]
+			},
+			"particle": {
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 1.062, "y": 1.062 },
+					{ "time": 0.4667, "x": 1.881, "y": 1.881 },
+					{ "time": 0.5, "x": 1.944, "y": 1.944 }
+				]
+			},
+			"starlight": {
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 0.933, "y": 0.933 },
+					{ "time": 0.4667, "x": 0.066, "y": 0.066 },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				]
+			},
+			"twistglow": {
+				"rotate": [
+					{},
+					{ "time": 0.0333, "value": -8.35 },
+					{ "time": 0.4667, "value": -117.02 },
+					{ "time": 0.5, "value": -125.38 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 0.933, "y": 0.933 },
+					{ "time": 0.4667, "x": 0.066, "y": 0.066 },
+					{ "time": 0.5, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
